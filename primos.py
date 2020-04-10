@@ -1,12 +1,16 @@
-texto = input("Escriba la palabra/frase que desea verificar si es un palpindromo: ")
-texto2 = ""
+def primo(num):
+    if num<4:
+        return True
+    r = int(n/2)+1
+    for i in range (2, r):
+        if num%i == 0:
+            return False
+    return True
 
-for i in texto:
-    texto2 = i + texto2
+n = int(input("Ingrese un número: "))
 
-if texto == texto2:
-    print("Es palíndromo.")
+if primo(n):
+    print("Es primo.")
 
 else:
-    print("No es palíndromo.")
-    
+    print("No es primo.")
